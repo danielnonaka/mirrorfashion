@@ -1,0 +1,56 @@
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+#pai{
+	width: 300px;
+	background-color: cyan;
+	position: relative;
+	top: 50px;
+	left: 50px;
+}
+
+#filho1 {
+	background-color: red;
+	width: 100px;
+	height: 100px;
+	position:relative;
+	top: 100px;
+	right: 100px;
+	
+}
+
+#filho2 {
+	background-color: yellow;
+	width: 100px;
+	height: 100px;
+	position: relative;
+	top: 0px;
+	right: 0px;	
+}
+
+div {
+	width:100px;
+	height: 100px;
+}
+
+#div1 {
+	float: right;
+	background-color: green;	
+}
+
+#div2 {
+	float: right;
+	background-color: blue;
+		
+}
+
+#div3 {
+	float: right;
+	background-color: red;
+clear: right;	
+}
+
+
