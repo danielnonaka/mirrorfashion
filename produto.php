@@ -20,7 +20,7 @@
 			<h1> Fuzzy Cardigan </h1>
 			<p>por apenas R$ 129,00</p>
 			
-			<form>
+			<form action="checkout.php" method="POST">
 				<fieldset class="cores">
 					<legend>Escolha a cor:</legend>
 
@@ -47,6 +47,9 @@
 
 				</fieldset>
 
+				
+				<input type="hidden" name="nome" value="Fuzzy Cardigan">
+				<input type="hidden" name="preco" value="129,00">
 				<input type="submit" class="comprar" value="Comprar">
 			</form>
 		</div>
@@ -55,7 +58,7 @@
 			<h2>Detalhes do produto</h2>
 			<p> 	Esse é o melhor casaco de Cardigã que você já viu. Excelente material italiano com estampa desenhada
 				pelos artesãos da comunidade de Krotor nas ilhas gregas. Compre já e receba hoje mesmo pela nossa
-				entrega a jato
+				entrega a jato.
 			</p>
 			
 			<table>
