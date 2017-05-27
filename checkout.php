@@ -40,12 +40,31 @@
 					<dd><?= $_POST['nome'] ?></dd>
 
 					<dt>Preço</dt>
-					<dd><?= $_POST['preco'] ?></dd>
+					<dd id="preco"> R$
+					 <output for="qt preco" id="total" class="form-control">
+						  <?=$_POST["preco"]?>
+					 </output>
+				  </dd>
+
+
 					</dl>
+
+					<div class="form-group">
+						<label for="qt"> Quantidade</label>
+						<input id="qt" class="form-control" type="number" min="0" max="99" value="1">
+					</div>
+
+					<div class="form-group">
+						<label for="total"> TOtal </label>
+						<output id="total" class="form-control">
+								<?= $_POST["preco" ] ?>
+						</output>
+					</div>
+
 				</div>
 			</div>
 			</div>
-		
+
 			<form class="col-sm-8">
 				<div class="row">
 				<fieldset class="col-md-6">
@@ -64,7 +83,7 @@
 
 					<div class="form-group">
 						<label for="cpf">CPF</label>
-						<input type="text" class="form-control" id="cpf" name="cpf"
+						<input data-mask="999.999.999-99" type="text" class="form-control" id="cpf" name="cpf"
 										placeholder="000.000.000-00" required>
 					</div>
 
@@ -76,13 +95,13 @@
 					</div>
 
 				</fieldset>
-				
+
 				<fieldset class="col-md-6">
 					<legend>Cartão de crédito</legend>
 
 					<div class="form-group">
 						<label for="numero-cartao">Número - CVV</label>
-						<input type="text" class="form-control" id="numero-cartao" name="numero-cartao">
+						<input data-mask="9999 9999 9999 - 999" type="text" class="form-control" id="numero-cartao" name="numero-cartao">
 					</div>
 
 					<div class="form-group">
@@ -108,6 +127,10 @@
 			</form>
 			</div>
 		</div>
-	
+
 	</body>
+
+	<script src="js/jquery.js"> </script>
+	<script src="js/inputmask-plugin.js"> </script>
+
 </html>

@@ -16,7 +16,7 @@
 	right: 0;
 }
 
-.menu-opcoes ul li{ 
+.menu-opcoes ul li{
 	font-size: 15px;
 	display: inline;
 	margin-left: 20px;
@@ -229,11 +229,14 @@ footer .container {
 	transform: scale(1.2) rotate(-5deg)
 }
 
+.painel button {
+		display: none;
+}
 
+.painel-compacto li:nth-child(n+7) {
+	display: none;
+}
 
-
-
-
-
-
-
+.painel-compacto button {
+	display: block;
+}
